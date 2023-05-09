@@ -175,8 +175,7 @@ def main():
         tmr += 1
         screen.blit(bg_img, [0, 0])
 
-        
-        
+    
         for bomb in bombs:
             bomb.update(screen)
             if bird._rct.colliderect(bomb._rct):
@@ -195,7 +194,7 @@ def main():
         if beam is not None:  # ビームが存在しているとき
             beam.update(screen)
             for i, bomb in enumerate(bombs):
-                if beam._rct.colliderect(bomb._rct):
+                if beam._rct.colliderect(bomb._rct): #beamとbombが衝突したとき
                     score += 1
                     beam = None
                     del bombs[i]
