@@ -183,7 +183,7 @@ def main():
                 # ゲームオーバー時に，こうかとん画像を切り替え，1秒間表示させる
                 bird.change_img(8, screen)
                 draw_text(screen,800,450,"GAMEOVER",200,BLACK) #GAMEOVERの表示
-                #draw_text(screen,130,30,f"score{score}",100,BLACK) #scoreの表示
+                draw_text(screen,130,30,f"score{score}",100,BLACK) #scoreの表示
                 pg.display.update()
                 time.sleep(1)
 
