@@ -67,6 +67,7 @@ class Bird: #クラス変数
         引数1 key_lst：押下キーの真理値リスト
         引数2 screen：画面Surface
         """
+        
         for k, mv in __class__._delta.items():
             if key_lst[k]:
                 self._rct.move_ip(mv)
